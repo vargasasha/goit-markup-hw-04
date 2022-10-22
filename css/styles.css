@@ -60,13 +60,11 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid green; */
 }
 
 .duty-reset {
@@ -188,6 +186,9 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -236,6 +237,44 @@ a {
 
 .about-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.about-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  display: block;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.about-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
 }
 
 .about-subtitle {
@@ -340,18 +379,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
 .teammate-soc-icon {
-fill: currentColor;
+  fill: currentColor;
 }
 
-.teammate-soc-link:hover, 
+.teammate-soc-link:hover,
 .teammate-soc-link:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: #ffffff;
-} 
+}
 
 .client-section {
 }
@@ -380,27 +419,28 @@ fill: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
-.client-link:hover, 
+.client-link:hover,
 .client-link:focus {
-  border-color: #2196F3;
-  fill: #2196F3;
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .footer {
   background: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
+  /* display: flex;
+  align-items: baseline; */
 }
 
-/* .footer div {
-  max-width: 231px;
-} */
+.footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -417,6 +457,7 @@ fill: currentColor;
 
 .footer-address {
   margin-top: 20px;
+  min-width: 231px;
 }
 
 .footer-list {
@@ -441,15 +482,14 @@ fill: currentColor;
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 .footer-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-soc-list {
@@ -457,7 +497,7 @@ margin-bottom: 20px;
   gap: 10px;
 }
 .footer-soc-item {
-   width: 44px;
+  width: 44px;
   height: 44px;
 }
 .footer-soc-link {
@@ -476,7 +516,7 @@ margin-bottom: 20px;
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .portfolio {
@@ -528,7 +568,8 @@ margin-bottom: 20px;
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-wrap {
