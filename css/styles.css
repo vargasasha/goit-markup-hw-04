@@ -11,6 +11,7 @@ body {
   --main-text-color: #757575;
   --origin-black: #000000;
   --accent-color: #2196f3;
+  --main-border-color: #afb1b8;
 }
 
 p,
@@ -244,7 +245,7 @@ a {
   width: 270px;
   height: 120px;
   display: block;
-  background-color: #f5f4fa;
+  background-color: var(--light-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -379,7 +380,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--main-border-color);
 }
 
 .teammate-soc-icon {
@@ -388,8 +389,8 @@ a {
 
 .teammate-soc-link:hover,
 .teammate-soc-link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
 }
 
 .client-section {
@@ -400,7 +401,7 @@ a {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-title-color);
   margin-bottom: 50px;
 }
 .client-list {
@@ -414,18 +415,18 @@ a {
 .client-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--main-border-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--main-border-color);
 }
 
 .client-link:hover,
 .client-link:focus {
-  border-color: #2196f3;
-  fill: #2196f3;
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .footer {
@@ -488,7 +489,7 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-background-color);
   margin-bottom: 20px;
 }
 
@@ -508,7 +509,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: var(--main-background-color);
 }
 .footer-soc-icon {
   fill: currentColor;
@@ -516,7 +517,7 @@ a {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .portfolio {
